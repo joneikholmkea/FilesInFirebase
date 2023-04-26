@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         createGalleryLauncher();
         createCameraLauncher();
         fs = new FirebaseService();
+        fs.downloadImage("space.jpg", imageView);
     }
     private void createCameraLauncher() {
         launchCameraForResult = registerForActivityResult(
